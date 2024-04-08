@@ -1,5 +1,5 @@
 import React from 'react';
-import { products } from './Product'; 
+import { newProducts} from './Product'; 
 
 // Create a component for individual game boxes
 const GameBox = ({ imgSrc, title, genre }) => {
@@ -30,12 +30,12 @@ const New = () => {
         <h2>New Games</h2>
       </div>
       <div className="new-content">
-        {products.map(product => (
+        {newProducts.map(products => (
           <GameBox
-            key={product.id}
-            imgSrc={product.img}
-            title={product.name}
-            genre={product.category}
+            key={products.id}
+            imgSrc={products.img}
+            title={products.name}
+            genre={products.category}
           />
         ))}
       </div>

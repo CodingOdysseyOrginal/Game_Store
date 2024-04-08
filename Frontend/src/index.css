@@ -194,6 +194,11 @@ color: #faf102;
 .box-color .bx{
   color: var(--main-color);
 }
+.carousel-item{
+  margin: 10px;
+}
+
+
 /*home page*/
 .home{
   position: relative;

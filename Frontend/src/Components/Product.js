@@ -79,80 +79,79 @@ export const products = [
       category: "Horror",
       Selection: "Trending",
     },
-    {
-      id: 8,
-      name: "Horizon Zero Dawn: Forbidden West",
-      img: zeroDawn,
-      rating: 3.3,
-      category: "Adventure",
-      Selection: "New",
-
-    },
-    {
-      id: 9,
-      name: "Assassin's Creed Mirage",
-      img: AcMirgin,
-      rating: 2.7,
-      category: "Action",
-      Selection: "New",
-
-    },
-    {
-      id: 10,
-      name: "Allen Wake 2",
-      img: AllenWake,
-      rating: 4.2,
-      category: "Horror",
-      Selection: "New",
-
-    },
-    {
-      id: 11,
-      name: "Mortal kombat 1",
-      img: MortalKombat,
-      rating: 3.9,
-      category: "Action",
-      Selection: "New",
-
-    },
-    {
-      id: 12,
-      name: "Evil West",
-      img: evilWest,
-      rating: 2.3,
-      category: "Action",
-      Selection: "New",
-
-    },
-    {
-      id: 13,
-      name: "Ratchet & Clank: Rift Apart",
-      img: ratchclank,
-      rating: 4.5,
-      category: "Action",
-      Selection: "New",
-
-    },
-    {
-      id: 14,
-      name: "Resident Evil Village",
-      img: redsidentVillage,
-      rating: 4.2,
-      category: "Horror",
-      Selection: "New",
-
-    },
-    {
-      id: 15,
-      name: "Elden Ring",
-      img: Elder,
-      rating: 5.0,
-      category: "Action",
-      Selection: "New",
-
-    },
   ];
+  export const newProducts = [
+    {
+        id: 8,
+        name: "Horizon Zero Dawn: Forbidden West",
+        img: zeroDawn,
+        rating: 3.3,
+        category: "Adventure",
+        Selection: "New",
+  
+      },
+      {
+        id: 9,
+        name: "Assassin's Creed Mirage",
+        img: AcMirgin,
+        rating: 2.7,
+        category: "Action",
+        Selection: "New",
+  
+      },
+      {
+        id: 10,
+        name: "Allen Wake 2",
+        img: AllenWake,
+        rating: 4.2,
+        category: "Horror",
+        Selection: "New",
+  
+      },
+      {
+        id: 11,
+        name: "Mortal kombat 1",
+        img: MortalKombat,
+        rating: 3.9,
+        category: "Action",
+        Selection: "New",
+  
+      },
+      {
+        id: 12,
+        name: "Evil West",
+        img: evilWest,
+        rating: 2.3,
+        category: "Action",
+        Selection: "New",
+  
+      },
+      {
+        id: 13,
+        name: "Ratchet & Clank: Rift Apart",
+        img: ratchclank,
+        rating: 4.5,
+        category: "Action",
+        Selection: "New",
+  
+      },
+      {
+        id: 14,
+        name: "Resident Evil Village",
+        img: redsidentVillage,
+        rating: 4.2,
+        category: "Horror",
+        Selection: "New",
+  
+      },
+      {
+        id: 15,
+        name: "Elden Ring",
+        img: Elder,
+        rating: 5.0,
+        category: "Action",
+        Selection: "New",
+      },
+  ]
 
-export const Trend = products.filter(product => product.category === "Trending");
-export const New = products.filter(product => product.category === "New");
   
