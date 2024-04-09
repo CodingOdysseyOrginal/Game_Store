@@ -7,11 +7,11 @@ const Trending = () => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1251 },
-      items: 5,
+      items: 4,
     },
     desktop2: {
       breakpoint: { max: 1250, min: 1001 },
-      items: 4,
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1000, min: 751 },

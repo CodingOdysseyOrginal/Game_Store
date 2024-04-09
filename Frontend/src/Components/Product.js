@@ -1,5 +1,5 @@
 import GhostOfTsushima from './img/ghost-tsushima.jpg';
-import Witcher from './img/Witcher.jpg';
+import Batman from './img/Batman.jpg';
 import cyberpunk from './img/cyberpunk.webp';
 import redsident4 from './img/Resident evil 4.jpg';
 import spiderman from './img/Spiderman.jpg';
@@ -28,10 +28,10 @@ export const products = [
     },
     {
       id: 2,
-      name: "The Witcher 3",
-      img: Witcher,
+      name: "Batman: Arkham Knight",
+      img: Batman,
       rating: 5.0,
-      category: "Adventure",
+      category: "Action",
       Selection: "Trending",
 
     },

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Witcher from './img/Witcher.jpg';
 import 'boxicons/css/boxicons.min.css';
+import { useMatch, useResolvedPath } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -54,5 +55,8 @@ const Navbar = () => {
     </header>
   );
 };
+
+
+  
 
 export default Navbar;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { newProducts} from './Product'; 
 
-// Create a component for individual game boxes
+
 const GameBox = ({ imgSrc, title, genre }) => {
   return (
     <div className="box">
@@ -21,7 +21,6 @@ const GameBox = ({ imgSrc, title, genre }) => {
   );
 };
 
-// Main New component
 const New = () => {
   return (
     <section className="new container" id="new">
