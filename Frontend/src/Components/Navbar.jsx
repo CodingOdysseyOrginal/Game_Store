@@ -22,7 +22,7 @@ const Navbar = () => {
       </div>
       <div className="nav container">
         <Link
-          to="Home"
+          to="home"
           spy={true}
           smooth={true}
           offset={50}
@@ -52,11 +52,11 @@ const Navbar = () => {
         <div className={`menu ${menuActive ? "active" : ""}`}>
           <img src={Witcher} alt="" />
           <div className="navbar">
-            <Link to="Home" spy={true} smooth={true} offset={50} duration={500}>
+            <Link to="home" spy={true} smooth={true} offset={50} duration={500}>
               Home
             </Link>
             <Link
-              to="Trending"
+              to="trending"
               spy={true}
               smooth={true}
               offset={50}
@@ -64,26 +64,14 @@ const Navbar = () => {
             >
               Trending
             </Link>
-            <Link to="New" spy={true} smooth={true} offset={50} duration={500}>
+            <Link
+              to="new"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
               New Games
-            </Link>
-            <Link
-              to="Action"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
-              Action
-            </Link>
-            <Link
-              to="Contact"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
-              Contact us
             </Link>
           </div>
         </div>
