@@ -54,7 +54,7 @@ const Trending = () => {
                     <i className="bx bxs-star"></i>
                     <span>{product.rating}</span>
                   </div>
-                  <a href="#" className="box-btn">
+                  <a href="/" className="box-btn">
                     <i className='bx bx-down-arrow-alt'></i>
                   </a>
                 </div>

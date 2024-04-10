@@ -6,7 +6,7 @@ export default function Home() {
             <img src={Hogwarts} alt="" />
             <div className="home-text">
                 <h1>Become A <br />Wizard</h1>
-                <a href="#" className="btn">Available Now</a>
+                <a href="/" className="btn">Available Now</a>
             </div>
             
         </section>

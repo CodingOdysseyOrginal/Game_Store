@@ -1,5 +1,7 @@
-export default function Download(){
-  return(
+import React from 'react'
+
+export const Download = () => {
+  return (
     <div>Download</div>
   )
 }

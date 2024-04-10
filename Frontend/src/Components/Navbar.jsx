@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import Witcher from './img/Witcher.jpg';
-import 'boxicons/css/boxicons.min.css';
-import { useMatch, useResolvedPath } from 'react-router-dom';
+import React, { useState } from "react";
+import Witcher from "./img/Witcher.jpg";
+import "boxicons/css/boxicons.min.css";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -21,24 +21,70 @@ const Navbar = () => {
         <div className="progress-bar" id="scroll-bar"></div>
       </div>
       <div className="nav container">
-        <a href="index.html" className="logo">Game<span>Stores</span></a>
+        <Link
+          to="Home"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+          className="logo"
+        >
+          Game<span>Stores</span>
+        </Link>
         <div className="nav-icons">
-          <i className={`bx bx-bell bx-tada ${bellActive ? 'active' : ''}`} id="bell-icon" onClick={toggleBell}><span></span></i>
-          <i className='bx bxs-download'></i>
-          <div className={`menu-icon ${menuActive ? 'active move' : ''}`} onClick={toggleMenu}>
+          <i
+            className={`bx bx-bell bx-tada ${bellActive ? "active" : ""}`}
+            id="bell-icon"
+            onClick={toggleBell}
+          >
+            <span></span>
+          </i>
+          <i className="bx bxs-download"></i>
+          <div
+            className={`menu-icon ${menuActive ? "active move" : ""}`}
+            onClick={toggleMenu}
+          >
             <div className="line1"></div>
             <div className="line2"></div>
             <div className="line3"></div>
           </div>
         </div>
-        <div className={`menu ${menuActive ? 'active' : ''}`}>
+        <div className={`menu ${menuActive ? "active" : ""}`}>
           <img src={Witcher} alt="" />
           <div className="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#trending">Trending</a></li>
-            <li><a href="#new">New Games</a></li>
-            <li><a href="#action">Action Games</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <Link to="Home" spy={true} smooth={true} offset={50} duration={500}>
+              Home
+            </Link>
+            <Link
+              to="Trending"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Trending
+            </Link>
+            <Link to="New" spy={true} smooth={true} offset={50} duration={500}>
+              New Games
+            </Link>
+            <Link
+              to="Action"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Action
+            </Link>
+            <Link
+              to="Contact"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Contact us
+            </Link>
           </div>
         </div>
         <div className="notifications">
@@ -55,8 +101,5 @@ const Navbar = () => {
     </header>
   );
 };
-
-
-  
 
 export default Navbar;

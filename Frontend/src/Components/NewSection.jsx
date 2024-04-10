@@ -1,5 +1,6 @@
 import React from 'react';
 import { newProducts} from './Product'; 
+import { Link } from 'react-router-dom';
 
 
 const GameBox = ({ imgSrc, title, genre }) => {
@@ -14,14 +15,14 @@ const GameBox = ({ imgSrc, title, genre }) => {
             <i className="bx bxs-star"></i>
             <span>4.7</span>
           </div>
-          <a href="#" className="box-btn"><i className='bx bx-down-arrow-alt'></i></a>
+          <Link to="/" className="box-btn"><i className='bx bx-down-arrow-alt'></i></Link>
         </div>
       </div>
     </div>
   );
 };
 
-const New = () => {
+const NewSection = () => {
   return (
     <section className="new container" id="new">
       <div className="heading">
@@ -39,10 +40,10 @@ const New = () => {
         ))}
       </div>
       <div className="next-page">
-        <a href="#">Next Page</a>
+        <a href="/">Next Page</a>
       </div>
     </section>
   );
 };
 
-export default New;
+export default NewSection;
