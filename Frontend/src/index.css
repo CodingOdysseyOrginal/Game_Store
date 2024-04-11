@@ -78,6 +78,7 @@ background:var(--light-color);
 border-radius:50%;
 cursor: pointer;
 }
+
 #bell-icon{
   position: relative;
 }
@@ -158,6 +159,7 @@ cursor: pointer;
 .navbar a:hover{
   border-bottom: 4px solid var(--main-color);
   font-size: 1.8rem;
+  cursor: pointer;
 }
 /*Notifications*/
 .notifications{
@@ -174,10 +176,12 @@ flex-direction: column;
 row-gap: 1rem;
 clip-path: circle(0% at 100% 0%);
 }
+
 .notifications.active{
 clip-path: circle(144% at 100% 0%);
 transition: 0.3s;
 }
+
 .notifications-box{
   display: flex;
   align-items: baseline;
@@ -198,6 +202,11 @@ color: #faf102;
 .carousel-item{
   margin: 10px;
 }
+
+
+
+
+
 
 
 /*home page*/

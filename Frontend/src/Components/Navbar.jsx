@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Witcher from "./img/Witcher.jpg";
 import "boxicons/css/boxicons.min.css";
 import { Link } from "react-scroll";
@@ -6,6 +6,7 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
   const [bellActive, setBellActive] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   const toggleMenu = () => {
     setMenuActive(!menuActive);
@@ -15,10 +16,30 @@ const Navbar = () => {
     setBellActive(!bellActive);
   };
 
+  useEffect(() => {
+    const updateScrollProgress = () => {
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const scrollTop = window.scrollY;
+      const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
+      setScrollProgress(scrollPercent);
+    };
+
+    window.addEventListener("scroll", updateScrollProgress);
+
+    return () => {
+      window.removeEventListener("scroll", updateScrollProgress);
+    };
+  }, []);
+
   return (
     <header>
       <div className="progress">
-        <div className="progress-bar" id="scroll-bar"></div>
+        <div
+          className="progress-bar"
+          id="scroll-bar"
+          style={{ width: `${scrollProgress}%` }}
+        ></div>
       </div>
       <div className="nav container">
         <Link

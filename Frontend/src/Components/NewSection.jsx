@@ -15,7 +15,7 @@ const GameBox = ({ imgSrc, title, genre }) => {
             <i className="bx bxs-star"></i>
             <span>4.7</span>
           </div>
-          <Link to="/" className="box-btn"><i className='bx bx-down-arrow-alt'></i></Link>
+          <Link to="/" className="box-btn">{/*THIS IS WHERE I WANT THE LINK TO GO PLEASE FOR EACH PROJECT */}<i className='bx bx-down-arrow-alt'></i></Link>
         </div>
       </div>
     </div>
