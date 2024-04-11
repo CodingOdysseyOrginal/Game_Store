@@ -13,6 +13,7 @@ return(
   <Home />
   <Trending/>
   <NewSection/>
+  
   <Footer/>
   </>
 )

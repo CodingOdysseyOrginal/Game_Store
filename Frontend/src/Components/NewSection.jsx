@@ -3,7 +3,7 @@ import { newProducts} from './Product';
 import { Link } from 'react-router-dom';
 
 
-const GameBox = ({ imgSrc, title, genre }) => {
+const GameBox = ({ imgSrc, title, genre, rating }) => {
   return (
     <div className="box">
       <img src={imgSrc} alt={title} />
@@ -13,7 +13,7 @@ const GameBox = ({ imgSrc, title, genre }) => {
         <div className="rating-download">
           <div className="rating">
             <i className="bx bxs-star"></i>
-            <span>4.7</span>
+            <span>{rating}</span>
           </div>
           <Link to="/" className="box-btn">{/*THIS IS WHERE I WANT THE LINK TO GO PLEASE FOR EACH PROJECT */}<i className='bx bx-down-arrow-alt'></i></Link>
         </div>
@@ -36,6 +36,7 @@ const NewSection = () => {
             imgSrc={products.img}
             title={products.name}
             genre={products.category}
+            rating={products.rating}
           />
         ))}
       </div>
