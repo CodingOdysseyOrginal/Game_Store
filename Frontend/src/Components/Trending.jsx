@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { Link } from 'react-router-dom';
 import { products } from './Product';
 
 const Trending = () => {
@@ -54,9 +55,9 @@ const Trending = () => {
                     <i className="bx bxs-star"></i>
                     <span>{product.rating}</span>
                   </div>
-                  <a href="/" className="box-btn">
+                  <Link to={`/download/${product.id}`} className="box-btn">
                     <i className='bx bx-down-arrow-alt'></i>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

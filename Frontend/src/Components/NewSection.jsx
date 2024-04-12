@@ -1,26 +1,6 @@
 import React from 'react';
-import { newProducts} from './Product'; 
+import { newProducts } from './Product';
 import { Link } from 'react-router-dom';
-
-
-const GameBox = ({ imgSrc, title, genre, rating }) => {
-  return (
-    <div className="box">
-      <img src={imgSrc} alt={title} />
-      <div className="box-text">
-        <h2>{title}</h2>
-        <h3>{genre}</h3>
-        <div className="rating-download">
-          <div className="rating">
-            <i className="bx bxs-star"></i>
-            <span>{rating}</span>
-          </div>
-          <Link to="/" className="box-btn">{/*THIS IS WHERE I WANT THE LINK TO GO PLEASE FOR EACH PROJECT */}<i className='bx bx-down-arrow-alt'></i></Link>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 const NewSection = () => {
   return (
@@ -30,14 +10,23 @@ const NewSection = () => {
         <h2>New Games</h2>
       </div>
       <div className="new-content">
-        {newProducts.map(products => (
-          <GameBox
-            key={products.id}
-            imgSrc={products.img}
-            title={products.name}
-            genre={products.category}
-            rating={products.rating}
-          />
+        {newProducts.map(product => (
+          <div className="box" key={product.id}>
+            <img src={product.img} alt={product.name} />
+            <div className="box-text">
+              <h2>{product.name}</h2>
+              <h3>{product.category}</h3>
+              <div className="rating-download">
+                <div className="rating">
+                  <i className="bx bxs-star"></i>
+                  <span>{product.rating}</span>
+                </div>
+                <Link to={`/download/${product.id}`} className="box-btn">
+                  <i className='bx bx-down-arrow-alt'></i>
+                </Link>
+              </div>
+            </div>
+          </div>
         ))}
       </div>
       <div className="next-page">
