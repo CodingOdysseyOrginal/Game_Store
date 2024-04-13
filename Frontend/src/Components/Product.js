@@ -13,6 +13,10 @@ import evilWest from './img/Evil West.jpg';
 import ratchclank from './img/Ratchet&clank.jpg'
 import redsidentVillage from './img/Resident evil Village.jpg';
 import Elder from './img/Elden Ring.jpg';
+import ZeroDownVideo from './img/Horizon Forbidden West - Announcement Trailer _ PS5.mp4';
+import zeroDawnscreenshot1 from './img/Screenshot1.png'
+import zeroDawnscreenshot2 from './img/Screenshot2.png'
+import zeroDawnscreenshot3 from './img/Screenshot3.png'
 
 
 
@@ -88,7 +92,10 @@ export const products = [
         rating: 3.3,
         category: "Adventure",
         Selection: "New",
-  
+        video: ZeroDownVideo,
+        screen1: zeroDawnscreenshot1,
+        screen2: zeroDawnscreenshot2,
+        screen3: zeroDawnscreenshot3,
       },
       {
         id: 9,
