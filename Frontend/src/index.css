@@ -396,7 +396,7 @@ color: #faf102;
   grid-template-columns: repeat(auto-fir, minmax(250px, auto));
   gap: 10px;
   justify-content: center;
-  max-width: 800px;
+  max-width: 250px;
   margin: auto;
   width: 100%;
 }
