@@ -13,10 +13,13 @@ import evilWest from './img/Evil West.jpg';
 import ratchclank from './img/Ratchet&clank.jpg'
 import redsidentVillage from './img/Resident evil Village.jpg';
 import Elder from './img/Elden Ring.jpg';
-import ZeroDownVideo from './img/Horizon Forbidden West - Announcement Trailer _ PS5.mp4';
+import ZeroDownVideo from './Videos/Horizon Forbidden West - Announcement Trailer _ PS5.mp4';
+
 import zeroDawnscreenshot1 from './img/Screenshot1.png'
 import zeroDawnscreenshot2 from './img/Screenshot2.png'
 import zeroDawnscreenshot3 from './img/Screenshot3.png'
+
+
 
 
 
@@ -28,7 +31,6 @@ export const products = [
       rating: 4.7,
       category: "Action",
       Selection: "Trending",
-
     },
     {
       id: 2,
@@ -96,6 +98,7 @@ export const products = [
         screen1: zeroDawnscreenshot1,
         screen2: zeroDawnscreenshot2,
         screen3: zeroDawnscreenshot3,
+        description: "Horizon Forbidden West continues Aloy’s story as she moves west to a far-future America to brave a majestic, but dangerous frontier where she’ll face awe-inspiring machines and mysterious new threats.",
       },
       {
         id: 9,
