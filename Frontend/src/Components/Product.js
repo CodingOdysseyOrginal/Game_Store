@@ -290,8 +290,6 @@ export const products = [
         screen3: ElderRing3,
         description: "The Golden Order has been broken. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between. In the Lands Between ruled by Queen Marika the Eternal, the Elden Ring, the source of the Erdtree, has been shattered. Marika's offspring, demigods all, claimed the shards of the Elden Ring known as the Great Runes, and the mad taint of their newfound strength triggered a war: The Shattering. A war that meant abandonment by the Greater Will.",
       },
-  ]
-  export const mainpage = [
     {
       id: 16,
       name: "Hogwarts Legacy",

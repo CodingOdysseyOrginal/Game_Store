@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { newProducts } from './Product';
 import { Link } from 'react-router-dom';
 
+
 const NewSection = () => {
+  const scrollToTop = () => {
+      window.scrollTo(0, 0)
+    }
+  
+    useEffect(() => {
+      const timerId = setTimeout(() => {
+        scrollToTop()
+      }, 10)
+  
+      return () => clearTimeout(timerId)
+    }, [])
   return (
     <section className="new container" id="new">
       <div className="heading">
@@ -21,7 +33,7 @@ const NewSection = () => {
                   <i className="bx bxs-star"></i>
                   <span>{product.rating}</span>
                 </div>
-                <Link to={`/download/${product.id}`} className="box-btn">
+                <Link onClick={scrollToTop} to={`/download/${product.id}`} className="box-btn">
                   <i className='bx bx-down-arrow-alt'></i>
                 </Link>
               </div>

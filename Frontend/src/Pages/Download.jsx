@@ -21,7 +21,7 @@ const Download = () => {
     <body className="download-page">
       <DownloadNavbar/>
       <div className="video-container container">
-        <video muted autoPlay>
+        <video controls muted autoPlay>
           <source src={selectedProduct.video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>

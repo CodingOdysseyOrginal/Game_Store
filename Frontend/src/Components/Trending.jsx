@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Link } from 'react-router-dom';
 import { products } from './Product';
+
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
 
 const Trending = () => {
   const responsive = {
@@ -27,6 +31,14 @@ const Trending = () => {
       items: 2,
     },
   };
+
+  useEffect(() => {
+    const timerId = setTimeout(() => {
+      scrollToTop();
+    }, 10);
+
+    return () => clearTimeout(timerId);
+  }, []);
 
   return (
     <section className="trending container" id="trending">
@@ -55,7 +67,7 @@ const Trending = () => {
                     <i className="bx bxs-star"></i>
                     <span>{product.rating}</span>
                   </div>
-                  <Link to={`/download/${product.id}`} className="box-btn">
+                  <Link onClick={scrollToTop} to={`/download/${product.id}`} className="box-btn">
                     <i className='bx bx-down-arrow-alt'></i>
                   </Link>
                 </div>
