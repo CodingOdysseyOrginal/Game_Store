@@ -1,28 +1,35 @@
-import React, { useEffect } from 'react';
-import { newProducts } from './Product';
-import { Link } from 'react-router-dom';
-
+import React, { useEffect, useState } from "react";
+import { newProducts } from "./Product";
+import { Link } from "react-router-dom";
 
 const NewSection = () => {
+  const [search, setSearch] = useState("");
   const scrollToTop = () => {
-      window.scrollTo(0, 0)
-    }
-  
-    useEffect(() => {
-      const timerId = setTimeout(() => {
-        scrollToTop()
-      }, 10)
-  
-      return () => clearTimeout(timerId)
-    }, [])
+    window.scrollTo(0, 0);
+  };
+
+  useEffect(() => {
+    const timerId = setTimeout(() => {
+      scrollToTop();
+    }, 10);
+
+    return () => clearTimeout(timerId);
+  }, []);
   return (
     <section className="new container" id="new">
       <div className="heading">
         <i className="bx bx-game"></i>
         <h2>New Games</h2>
+        <input
+          onChange={(e) => setSearch(e.target.value)}
+          type="text"
+          placeholder="Search..."
+        />
       </div>
       <div className="new-content">
-        {newProducts.map(product => (
+        {newProducts.filter ((product) => {
+          return search.toLowerCase() === '' ? product : product.name.toLowerCase().includes(search);
+        }).map((product) => (
           <div className="box" key={product.id}>
             <img src={product.img} alt={product.name} />
             <div className="box-text">
@@ -33,8 +40,12 @@ const NewSection = () => {
                   <i className="bx bxs-star"></i>
                   <span>{product.rating}</span>
                 </div>
-                <Link onClick={scrollToTop} to={`/download/${product.id}`} className="box-btn">
-                  <i className='bx bx-down-arrow-alt'></i>
+                <Link
+                  onClick={scrollToTop}
+                  to={`/download/${product.id}`}
+                  className="box-btn"
+                >
+                  <i className="bx bx-down-arrow-alt"></i>
                 </Link>
               </div>
             </div>
