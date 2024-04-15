@@ -43,7 +43,7 @@ const Navbar = () => {
       </div>
       <div className="nav container">
         <Link
-          to="home"
+          to="/Game_Store"
           spy={true}
           smooth={true}
           offset={50}

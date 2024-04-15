@@ -9,7 +9,7 @@ function App() {
     <>
       
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/Game_Store" element={<HomePage />} />
         <Route path="/download/:id" element={<Download />} />
       </Routes>
 

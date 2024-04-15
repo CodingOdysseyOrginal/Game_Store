@@ -3,7 +3,7 @@ import Batman from './img/Batman.jpg';
 import cyberpunk from './img/cyberpunk.webp';
 import redsident4 from './img/Resident evil 4.jpg';
 import spiderman from './img/Spiderman2.avif';
-import persona5 from './img//Persona-5-Royal-Deluxe-Edition.jpg';
+import persona5 from './img/Persona-5-Royal-Deluxe-Edition.jpg';
 import dyinglight from './img/Dying Light 2.jpg';
 import zeroDawn from './img/Zero Dawn.jpg';
 import RiseOfTheRonin from './img/RiseOfTheRonin.webp'
