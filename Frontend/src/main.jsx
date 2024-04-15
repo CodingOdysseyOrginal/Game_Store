@@ -11,7 +11,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </BrowserRouter>
   </React.StrictMode>
 );
-// TO DO LIST
-// 3. look in to useEffect on the link to the download page so it starts at the top
-// 4. Look inot making a filter bar for your games such as genre or maybe name. 
-// 5. Host it all 
+ 
