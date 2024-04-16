@@ -44,7 +44,7 @@ const DownloadNavbar = () => {
         ></div>
       </div>
       <div className="nav container">
-        <Link to="/" className="logo">
+        <Link to="/Game_Store" className="logo">
           Game<span>Stores</span>
         </Link>
         <div className="nav-icons">
