@@ -28,7 +28,7 @@ const NewSection = () => {
       </div>
       <div className="new-content">
         {newProducts.filter ((product) => {
-          return search.toLowerCase() === '' ? product : product.category.toLowerCase().includes(search);
+          return search.toLowerCase() === '' ? product : product.name.toLowerCase().includes(search);
         }).map((product) => (
           <div className="box" key={product.id}>
             <img src={product.img} alt={product.name} />
